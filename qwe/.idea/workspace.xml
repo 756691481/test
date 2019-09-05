@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f379ca7-7537-4124-a74a-96d530d509a0" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Tag Library Descriptor" />
+        <option value="JavaFXApplication" />
+        <option value="HTML File" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit3 Test Class" />
+        <option value="JavaScript File" />
+        <option value="AnnotationType" />
+        <option value="Kotlin File" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1P2cU8c5F1wYOWddIOiszQ4jHFY" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sad" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+      <recent name="sa" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\qwe\src\main\java" />
+      <recent name="E:\qwe\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="daoTest.updateUserById" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="qwe" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="daoTest.deleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="qwe" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="daoTest" />
+      <option name="METHOD_NAME" value="deleteUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="daoTest.insertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="qwe" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="daoTest" />
+      <option name="METHOD_NAME" value="insertUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="daoTest.updateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="qwe" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="daoTest" />
+      <option name="METHOD_NAME" value="updateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="daoTest.updateUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="qwe" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="daoTest" />
+      <option name="METHOD_NAME" value="updateUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.daoTest.deleteUser" />
+        <item itemvalue="JUnit.daoTest.updateUser" />
+        <item itemvalue="JUnit.daoTest.insertUser" />
+        <item itemvalue="JUnit.daoTest.updateUserById" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task id="Default" summary="Default task">
+      <changelist id="4f379ca7-7537-4124-a74a-96d530d509a0" name="Default Changelist" comment="" />
+      <created>1565075644299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565862564847</updated>
+      <workItem from="1565075648928" duration="3068000" />
+      <workItem from="1565079370614" duration="7077000" />
+      <workItem from="1565144031514" duration="28516000" />
+      <workItem from="1565228355772" duration="5818000" />
+      <workItem from="1565236902043" duration="13752000" />
+      <workItem from="1565318066091" duration="6134000" />
+      <workItem from="1565328643969" duration="1643000" />
+      <workItem from="1565331479337" duration="1927000" />
+      <workItem from="1565333470338" duration="7829000" />
+      <workItem from="1565404994318" duration="3202000" />
+      <workItem from="1565497898259" duration="1455000" />
+      <workItem from="1565572719584" duration="21492000" />
+      <workItem from="1565676136149" duration="11243000" />
+      <workItem from="1565687488221" duration="9302000" />
+      <workItem from="1565745877787" duration="11816000" />
+      <workItem from="1565833189713" duration="20000" />
+      <workItem from="1565856841384" duration="5089000" />
+    </task>
+    <task active="true" id="LOCAL-00001" summary="sa">
+      <created>1565862558028</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565862564873</updated>
+      <workItem from="1565862565495" duration="6516000" />
+      <workItem from="1565920347163" duration="5124000" />
+      <workItem from="1565942243029" duration="9087000" />
+      <workItem from="1566012148486" duration="5239000" />
+      <workItem from="1566027161754" duration="424000" />
+      <workItem from="1566027887768" duration="1842000" />
+      <workItem from="1566038133136" duration="1527000" />
+      <workItem from="1566176826435" duration="13000" />
+      <workItem from="1566178425252" duration="2146000" />
+      <workItem from="1566182155528" duration="970000" />
+      <workItem from="1566373795385" duration="1005000" />
+      <workItem from="1566375973505" duration="597000" />
+      <workItem from="1566383991079" duration="2250000" />
+      <workItem from="1566552503887" duration="262000" />
+      <workItem from="1566559754224" duration="861000" />
+      <workItem from="1566610997437" duration="2706000" />
+      <workItem from="1566630025199" duration="1639000" />
+      <workItem from="1566784487366" duration="19910000" />
+      <workItem from="1566818958958" duration="298000" />
+      <workItem from="1566821015262" duration="1000" />
+      <workItem from="1566870495721" duration="15500000" />
+      <workItem from="1566954618840" duration="8517000" />
+      <workItem from="1566977861988" duration="2261000" />
+      <workItem from="1566983156311" duration="631000" />
+      <workItem from="1566985495163" duration="2584000" />
+      <workItem from="1566991289378" duration="1325000" />
+      <workItem from="1567042472938" duration="2177000" />
+      <workItem from="1567417101968" duration="1373000" />
+      <workItem from="1567473155674" duration="16636000" />
+      <workItem from="1567578542634" duration="2816000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

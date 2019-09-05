@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao">
+<select id="findUserById" parameterType="int"
+                resultType="Bm">
+        select * from bm where id=#{id}
+</select>
+<insert id="insertUser" >
+    insert into bm (name,qq) values (#{name},#{qq})
+</insert>
+<delete id="deleteUser">
+delete from bm where id=#{id}
+    </delete>
+<update id="updateUser"   >
+update  bm SET name=#{name},qq=#{qq}where id=#{id}
+</update>
+</mapper>
