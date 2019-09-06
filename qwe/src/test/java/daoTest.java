@@ -4,8 +4,12 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Before;
 import org.junit.Test;
+import sun.awt.geom.AreaOp;
+
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
+
 public class daoTest {
     private SqlSessionFactory sqlSessionFactory;
     @Before
@@ -55,4 +59,14 @@ public class daoTest {
          sqlSession.commit();
         sqlSession.close();
     }
+@Test
+public  void selByIUP()throws Exception{
+    SqlSession sqlSession = sqlSessionFactory.openSession();
+    dao dao=sqlSession.getMapper(dao.class);
+  List<Bm> list=dao.selByIUP("444",null);
+    for (Bm bm:list){
+System.out.println(bm);
+}
+    sqlSession.close();
+}
 }

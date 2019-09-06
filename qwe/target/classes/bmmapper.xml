@@ -14,4 +14,15 @@ delete from bm where id=#{id}
 <update id="updateUser"   >
 update  bm SET name=#{name},qq=#{qq}where id=#{id}
 </update>
+    <select id="selByIUP" resultType="Bm">
+        select * from bm
+        <where>
+            <if test="name!=null and name!=''">
+                and name=#{name}
+            </if>
+            <if test="qq!=null and qq!=''">
+                and qq=#{qq}
+            </if>
+        </where>
+    </select>
 </mapper>

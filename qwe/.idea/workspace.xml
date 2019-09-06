@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f379ca7-7537-4124-a74a-96d530d509a0" name="Default Changelist" comment="" />
+    <list default="true" id="4f379ca7-7537-4124-a74a-96d530d509a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/sb/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/src/main/java/Bm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/src/main/java/asd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/src/main/java/bmmapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/src/main/java/dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/src/main/resources/conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/src/test/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/src/test/java/JDBCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/src/test/java/daoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/src/test/java/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/classes/Bm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/classes/META-INF/qwe.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/classes/asd.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/classes/bmmapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/classes/conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/classes/dao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/qwe-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/spring-boot-starter-jdbc-2.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/test-classes/JDBCTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/test-classes/META-INF/qwe.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/test-classes/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sb/target/test-classes/daoTest.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +58,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/test/sb" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -33,6 +69,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1P2cU8c5F1wYOWddIOiszQ4jHFY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -85,7 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="JUnit.daoTest.selByIUP">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="qwe" />
@@ -103,11 +140,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="daoTest.insertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="daoTest.findActiveBlogWithTitleLike" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="qwe" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="daoTest" />
-      <option name="METHOD_NAME" value="insertUser" />
+      <option name="METHOD_NAME" value="findActiveBlogWithTitleLike" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="daoTest.selByIUP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="qwe" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="daoTest" />
+      <option name="METHOD_NAME" value="selByIUP" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,23 +170,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="daoTest.updateUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="qwe" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="daoTest" />
-      <option name="METHOD_NAME" value="updateUserById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.daoTest.selByIUP" />
+        <item itemvalue="JUnit.daoTest.findActiveBlogWithTitleLike" />
         <item itemvalue="Application.Test" />
         <item itemvalue="JUnit.daoTest.deleteUser" />
         <item itemvalue="JUnit.daoTest.updateUser" />
-        <item itemvalue="JUnit.daoTest.insertUser" />
-        <item itemvalue="JUnit.daoTest.updateUserById" />
       </list>
     </recent_temporary>
   </component>
@@ -207,11 +244,30 @@
       <workItem from="1567417101968" duration="1373000" />
       <workItem from="1567473155674" duration="16636000" />
       <workItem from="1567578542634" duration="2816000" />
+      <workItem from="1567658463755" duration="8000" />
+      <workItem from="1567659045803" duration="2739000" />
+      <workItem from="1567670568097" duration="16000" />
+      <workItem from="1567672609457" duration="5000" />
+      <workItem from="1567676159669" duration="3536000" />
+      <workItem from="1567732794898" duration="5508000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
