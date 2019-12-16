@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.BannerUserMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.entity.BannerUser">
+    <id column="banner_id" jdbcType="INTEGER" property="bannerId" />
+    <result column="banner_img" jdbcType="VARCHAR" property="bannerImg" />
+    <result column="banner_url" jdbcType="VARCHAR" property="bannerUrl" />
+    <result column="banner_status" jdbcType="INTEGER" property="bannerStatus" />
+    <result column="creat_by" jdbcType="VARCHAR" property="creatBy" />
+    <result column="creat_at" jdbcType="BIGINT" property="creatAt" />
+    <result column="upadte_by" jdbcType="VARCHAR" property="upadteBy" />
+    <result column="update_at" jdbcType="BIGINT" property="updateAt" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    banner_id, banner_img, banner_url, banner_status, creat_by, creat_at, upadte_by, 
+    update_at
+  </sql>
+  <select id="selectByExample" parameterType="com.example.demo.entity.BannerUserExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    from banner
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from banner
+    where banner_id = #{bannerId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from banner
+    where banner_id = #{bannerId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.example.demo.entity.BannerUser">
+    insert into banner (banner_id, banner_img, banner_url, 
+      banner_status, creat_by, creat_at, 
+      upadte_by, update_at)
+    values (#{bannerId,jdbcType=INTEGER}, #{bannerImg,jdbcType=VARCHAR}, #{bannerUrl,jdbcType=VARCHAR}, 
+      #{bannerStatus,jdbcType=INTEGER}, #{creatBy,jdbcType=VARCHAR}, #{creatAt,jdbcType=BIGINT}, 
+      #{upadteBy,jdbcType=VARCHAR}, #{updateAt,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.demo.entity.BannerUser">
+    insert into banner
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="bannerId != null">
+        banner_id,
+      </if>
+      <if test="bannerImg != null">
+        banner_img,
+      </if>
+      <if test="bannerUrl != null">
+        banner_url,
+      </if>
+      <if test="bannerStatus != null">
+        banner_status,
+      </if>
+      <if test="creatBy != null">
+        creat_by,
+      </if>
+      <if test="creatAt != null">
+        creat_at,
+      </if>
+      <if test="upadteBy != null">
+        upadte_by,
+      </if>
+      <if test="updateAt != null">
+        update_at,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="bannerId != null">
+        #{bannerId,jdbcType=INTEGER},
+      </if>
+      <if test="bannerImg != null">
+        #{bannerImg,jdbcType=VARCHAR},
+      </if>
+      <if test="bannerUrl != null">
+        #{bannerUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="bannerStatus != null">
+        #{bannerStatus,jdbcType=INTEGER},
+      </if>
+      <if test="creatBy != null">
+        #{creatBy,jdbcType=VARCHAR},
+      </if>
+      <if test="creatAt != null">
+        #{creatAt,jdbcType=BIGINT},
+      </if>
+      <if test="upadteBy != null">
+        #{upadteBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateAt != null">
+        #{updateAt,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.entity.BannerUser">
+    update banner
+    <set>
+      <if test="bannerImg != null">
+        banner_img = #{bannerImg,jdbcType=VARCHAR},
+      </if>
+      <if test="bannerUrl != null">
+        banner_url = #{bannerUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="bannerStatus != null">
+        banner_status = #{bannerStatus,jdbcType=INTEGER},
+      </if>
+      <if test="creatBy != null">
+        creat_by = #{creatBy,jdbcType=VARCHAR},
+      </if>
+      <if test="creatAt != null">
+        creat_at = #{creatAt,jdbcType=BIGINT},
+      </if>
+      <if test="upadteBy != null">
+        upadte_by = #{upadteBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateAt != null">
+        update_at = #{updateAt,jdbcType=BIGINT},
+      </if>
+    </set>
+    where banner_id = #{bannerId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.demo.entity.BannerUser">
+    update banner
+    set banner_img = #{bannerImg,jdbcType=VARCHAR},
+      banner_url = #{bannerUrl,jdbcType=VARCHAR},
+      banner_status = #{bannerStatus,jdbcType=INTEGER},
+      creat_by = #{creatBy,jdbcType=VARCHAR},
+      creat_at = #{creatAt,jdbcType=BIGINT},
+      upadte_by = #{upadteBy,jdbcType=VARCHAR},
+      update_at = #{updateAt,jdbcType=BIGINT}
+    where banner_id = #{bannerId,jdbcType=INTEGER}
+  </update>
+</mapper>

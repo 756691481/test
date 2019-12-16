@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.WorksUserMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.entity.WorksUser">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="img" jdbcType="VARCHAR" property="img" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="secondid" jdbcType="INTEGER" property="secondid" />
+    <result column="creatat" jdbcType="BIGINT" property="creatat" />
+    <result column="creatby" jdbcType="VARCHAR" property="creatby" />
+    <result column="updateat" jdbcType="BIGINT" property="updateat" />
+    <result column="updateby" jdbcType="VARCHAR" property="updateby" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, name, url, img, status, secondid, creatat, creatby, updateat, updateby
+  </sql>
+  <select id="selectByExample" parameterType="com.example.demo.entity.WorksUserExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    from works
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from works
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from works
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.example.demo.entity.WorksUser">
+    insert into works (id, name, url, 
+      img, status, secondid, 
+      creatat, creatby, updateat, 
+      updateby)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR}, 
+      #{img,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}, #{secondid,jdbcType=INTEGER}, 
+      #{creatat,jdbcType=BIGINT}, #{creatby,jdbcType=VARCHAR}, #{updateat,jdbcType=BIGINT}, 
+      #{updateby,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.demo.entity.WorksUser">
+    insert into works
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="url != null">
+        url,
+      </if>
+      <if test="img != null">
+        img,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="secondid != null">
+        secondid,
+      </if>
+      <if test="creatat != null">
+        creatat,
+      </if>
+      <if test="creatby != null">
+        creatby,
+      </if>
+      <if test="updateat != null">
+        updateat,
+      </if>
+      <if test="updateby != null">
+        updateby,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null">
+        #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null">
+        #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="secondid != null">
+        #{secondid,jdbcType=INTEGER},
+      </if>
+      <if test="creatat != null">
+        #{creatat,jdbcType=BIGINT},
+      </if>
+      <if test="creatby != null">
+        #{creatby,jdbcType=VARCHAR},
+      </if>
+      <if test="updateat != null">
+        #{updateat,jdbcType=BIGINT},
+      </if>
+      <if test="updateby != null">
+        #{updateby,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.entity.WorksUser">
+    update works
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null">
+        url = #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null">
+        img = #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="secondid != null">
+        secondid = #{secondid,jdbcType=INTEGER},
+      </if>
+      <if test="creatat != null">
+        creatat = #{creatat,jdbcType=BIGINT},
+      </if>
+      <if test="creatby != null">
+        creatby = #{creatby,jdbcType=VARCHAR},
+      </if>
+      <if test="updateat != null">
+        updateat = #{updateat,jdbcType=BIGINT},
+      </if>
+      <if test="updateby != null">
+        updateby = #{updateby,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.demo.entity.WorksUser">
+    update works
+    set name = #{name,jdbcType=VARCHAR},
+      url = #{url,jdbcType=VARCHAR},
+      img = #{img,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      secondid = #{secondid,jdbcType=INTEGER},
+      creatat = #{creatat,jdbcType=BIGINT},
+      creatby = #{creatby,jdbcType=VARCHAR},
+      updateat = #{updateat,jdbcType=BIGINT},
+      updateby = #{updateby,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

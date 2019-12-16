@@ -1,0 +1,14 @@
+server:
+  port: 8090
+spring:
+  aop:
+    proxy-target-class: true
+  datasource:
+   username: root
+   password: 12345
+   url: jdbc:mysql://localhost:3306/baoming?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+   driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.example.demo.entity
+
